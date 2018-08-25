@@ -1,4 +1,8 @@
-﻿  UVa12107数字谜.cpp
-f:\github\uva_oj\uva\uva\uva12107数字谜.cpp(132): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  UVa1604立体八数码问题 (双向bfs).cpp
+f:\github\uva_oj\uva\uva\uva1604立体八数码问题 (双向bfs).cpp(565): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(242): note: 参见“freopen”的声明
+f:\github\uva_oj\uva\uva\uva1604立体八数码问题 (双向bfs).cpp(566): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(242): note: 参见“freopen”的声明
+f:\github\uva_oj\uva\uva\uva1604立体八数码问题 (双向bfs).cpp(568): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
   UVa.vcxproj -> F:\GitHub\UVa_OJ\UVa\Debug\UVa.exe

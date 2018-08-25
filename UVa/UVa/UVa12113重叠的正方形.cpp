@@ -60,24 +60,24 @@ bool dfs(int step)
 	return false;
 }
 
-//
-//int main()
-//{
-//	int kcase = 1;
-//	while (1)
-//	{
-//		for (int i = 0; i < 5; i++)
-//		{
-//			gets(mp[i]);
-//			if (mp[i][0] == '0') return 0;
-//		}
-//
-//		for (int i = 0; i<5; i++)
-//			for (int j = 0; j<9; j++)
-//				p[i][j] = ' ';
-//		mem(visit, 0);
-//		if (dfs(0)) printf("Case %d: Yes\n", kcase++);
-//		else printf("Case %d: No\n", kcase++);
-//	}
-//	return 0;
-//}
+
+int main()
+{
+	int kcase = 1;
+	while (1)
+	{
+		for (int i = 0; i < 5; i++)
+		{
+			gets(mp[i]);
+			if (mp[i][0] == '0') return 0;
+		}
+
+		for (int i = 0; i<5; i++)
+			for (int j = 0; j<9; j++)
+				p[i][j] = ' ';
+		mem(visit, 0);
+		if (dfs(0)) printf("Case %d: Yes\n", kcase++);
+		else printf("Case %d: No\n", kcase++);
+	}
+	return 0;
+}

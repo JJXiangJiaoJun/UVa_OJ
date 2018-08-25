@@ -107,7 +107,7 @@ bool dfs(int d, int index, int cnt)
 		//相同则不替换
 		if (temp_buf == ch[i])
 		{
-			//factor[index][cnt] = temp_buf;
+			factor[index][cnt] = temp_buf;
 			if(dfs(d,new_index,new_cnt)) return true;
 		}
 		else

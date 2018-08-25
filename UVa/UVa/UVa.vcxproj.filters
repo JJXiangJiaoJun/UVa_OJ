@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UVa12113重叠的正方形.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="UVa12107数字谜.cpp">
+    <ClCompile Include="UVa1604立体八数码问题 (双向bfs).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
