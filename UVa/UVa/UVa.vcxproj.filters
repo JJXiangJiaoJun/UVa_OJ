@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UVa1604立体八数码问题 (双向bfs).cpp">
+    <ClCompile Include="UVa1533移动小球.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -6,7 +6,7 @@
 #include <string>
 using namespace std;
 const int maxn = 15+3;
-const int maxstate = 4000000;
+const int maxstate = 150000;
 const int maxt = 3;
 int count_inv = 0;
 
@@ -31,7 +31,7 @@ int n, m, s, t;
 int G[maxn][maxn];
 int init_state, target_state;
 
-State state[maxstate];
+State state[maxstate*2];
 State end_state[maxstate];
 int A[maxn];
 
@@ -115,7 +115,9 @@ int bfs()
 	count_inv = 0;
 	generate_obstacle(0, 0);
 
-	while (!q.empty()||!q_end.empty())
+	int cnt2 = 5;
+
+	while (!q.empty())
 	{
 		int start_size = q.size();
 		int end_size = q_end.size();
@@ -178,19 +180,20 @@ int bfs()
 						//说明结束节点遍历到了这个节点
 						else if (checked == 2)
 						{
-							/*printf("正向bfs找到相同点:%d\n", cnt);
-							for (int i = 0; i < 15; i++)
-								printf("%d ", state[cnt].sta[i]);
-							printf("\n");
+							//printf("正向bfs找到相同点:%d\n", cnt);
+							//for (int i = 0; i < 15; i++)
+							//	printf("%d ", state[cnt].sta[i]);
+							//printf("\n");
 
-							int get_index = get_idx(cnt);
-							printf("反向bfs相同点的索引为:%d\n", get_index);
-							for (int i = 0; i < 15; i++)
-								printf("%d ", end_state[get_index].sta[i]);
-							printf("\n");
+							//int get_index = get_idx(cnt);
+							//printf("反向bfs相同点的索引为:%d\n", get_index);
+							//for (int i = 0; i < 15; i++)
+							//	printf("%d ", end_state[get_index].sta[i]);
+							//printf("\n");
 
-							printf("正向距离 state[%d].dist = %d  反向距离 end_state[%d].dist = %d\n", cnt, state[cnt].dist, get_index, end_state[get_index].dist);
-*/							is_start = true;
+							//printf("正向距离 state[%d].dist = %d  反向距离 end_state[%d].dist = %d\n", cnt, state[cnt].dist, get_index, end_state[get_index].dist);
+							//
+							is_start = true;
 							return cnt;
 							//return state[cnt].dist + end_state[get_idx(cnt)].dist;
 						}
@@ -201,7 +204,7 @@ int bfs()
 
 		}
 		
-		while (end_size--)
+		while (end_size--&&end_state[q_end.front()].dist<=cnt2)
 		{
 			int index = q_end.front();
 			q_end.pop();
@@ -258,7 +261,7 @@ int bfs()
 						else if (checked == 1)
 						{
 						
-							/*printf("反向bfs找到相同点:%d\n", count_inv);
+						/*	printf("反向bfs找到相同点:%d\n", count_inv);
 							for (int i = 0; i < 15; i++)
 								printf("%d ", end_state[count_inv].sta[i]);
 							printf("\n");
@@ -270,6 +273,7 @@ int bfs()
 							printf("\n");
 
 							printf("反向距离 end_state[%d].dist = %d  正向距离 state[%d].dist = %d\n", count_inv, end_state[count_inv].dist, get_index, state[get_index].dist);*/
+							
 							is_start = false;
 							return count_inv;
 							//return end_state[count_inv].dist + state[get_idx_inv(count_inv)].dist;
@@ -284,18 +288,41 @@ int bfs()
 	return -1;
 }
 
+int iter = 0;
+
 void print_ans(int index)
 {
-	if (state[index].father != 0)
+	iter++;
+	if (state[index].dist == 0)
+	{
+		//printf("正向打印state[%d].dist = %d\n ", index, state[index].dist);
+		return;
+	}
+	else {
+		
+		//printf("正向打印父节点state[%d].father = %d\n", index, state[index].father);
 		print_ans(state[index].father);
-	printf("%d %d\n", state[index].move_index+1, state[index].dest_index+1);
+		printf("%d %d\n", state[index].move_index + 1, state[index].dest_index + 1);
+	}
 }
+
+int iter_inv = 0;
 
 void print_ans_inv(int index)
 {
-	if (end_state[index].father != 0)
-		print_ans(end_state[index].father);
-	printf("%d %d\n", end_state[index].move_index+1, end_state[index].dest_index+1);
+	iter_inv++;
+	if (end_state[index].dist == 0)
+
+	{
+		//printf("反向打印 end_state[%d].dist = %d\n ", index, end_state[index].dist);
+
+		return;
+	}
+	else {
+		//printf("反向打印父节点end_state[%d].father = %d\n", index, end_state[index].father);
+		print_ans_inv(end_state[index].father);
+		printf("%d %d\n", end_state[index].move_index + 1, end_state[index].dest_index + 1);
+	}
 }
 
 
@@ -388,20 +415,27 @@ int main()
 			printf("Case %d: %d\n",kcase++,-1);
 		}
 		//如果是由开始节点遍历得到的
-		else if(is_start)
-		{
-			int sta_index = get_idx(ans);
-			printf("Case %d: %d\n", kcase++, state[ans].dist + end_state[sta_index].dist);
-			print_ans(ans);
-			print_ans_inv(sta_index);
-		}
 		else
 		{
-			int sta_index = get_idx_inv(ans);
-			printf("Case %d: %d\n", kcase++, end_state[ans].dist + state[sta_index].dist);
-			print_ans(sta_index);
-			print_ans_inv(ans);
+			if (is_start)
+			{
+				int sta_index = get_idx(ans);
+
+				printf("Case %d: %d\n", kcase++, state[ans].dist + end_state[sta_index].dist);
+				print_ans(ans);
+				//print_ans_inv(end_state[sta_index].father);
+				print_ans_inv(sta_index);
+			}
+			else
+			{
+				int sta_index = get_idx_inv(ans);
+				printf("Case %d: %d\n", kcase++, end_state[ans].dist + state[sta_index].dist);
+				print_ans(sta_index);
+				//print_ans_inv(end_state[ans].father);
+				print_ans_inv(ans);
+			}
 		}
+		//printf("正向打印个数 iter = %d  反向打印个数 iter_inv = %d\n", iter, iter_inv);
 		printf("\n");
 	}
 	return 0;
