@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UVa1533移动小球.cpp">
+    <ClCompile Include="UVa817 数字表达式.cpp">
       <SDLCheck Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</SDLCheck>
     </ClCompile>
   </ItemGroup>
