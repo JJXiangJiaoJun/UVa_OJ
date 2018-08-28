@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UVa817 数字表达式.cpp">
+    <ClCompile Include="UVa307.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
