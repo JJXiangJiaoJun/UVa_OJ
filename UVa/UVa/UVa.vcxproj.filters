@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UVa307.cpp">
+    <ClCompile Include="UVa11882最大的数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
