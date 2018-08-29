@@ -94,7 +94,7 @@ void dfs(int position,int cur)
 
 		search_num[cur] = '\0';
 		//printf("search_num = %s\n", search_num);
-		//dist = max(dist, cur);
+		
 		if (dist < cur)
 		{
 			dist = cur;
@@ -105,7 +105,8 @@ void dfs(int position,int cur)
 			if (strcmp(max_number, search_num)<0)
 				memcpy(max_number, search_num, sizeof(max_number));
 		}
-		////如果最大值大于当前最大值，那么替换
+		//如果最大值大于当前最大值，那么替换
+		//dist = max(dist, cur);
 		//if (strlen(search_num) > strlen(max_number))
 		//{
 		//	memcpy(max_number, search_num, sizeof(max_number));
@@ -120,124 +121,7 @@ void dfs(int position,int cur)
 }
 
 
-//void dfs(int position, int cur,int first)
-//{
-//	char temp_buf[maxn];
-//	bool is_end = true;
-//	bool have_path = false;;
-//	memcpy(temp_buf, search_num, sizeof(search_num));
-//	//search_num[cur] = number[position];
-//
-//	for (int i = 0; i < deg[position]; i++)
-//	{
-//		
-//		if (first) { if (edge[position][map[position][i]]) continue; }
-//
-//		have_path = true;
-//		//如果该节点没有被访问过
-//		if (!vis[map[position][i]])
-//		{
-//			is_end = false;
-//			vis[map[position][i]] = 1;
-//
-//			search_num[cur] = number[map[position][i]];
-//
-//			edge[position][map[position][i]] = 1;
-//
-//			dfs(map[position][i], cur + 1,0);
-//
-//			memcpy(search_num, temp_buf, sizeof(search_num));
-//			vis[map[position][i]] = 0;
-//		}
-//	}
-//	//如果该节点已经没有节点可以访问，表示已经走到了尽头
-//	if (is_end&&have_path) {
-//
-//
-//		search_num[cur] = '\0';
-//		printf("search_num = %s\n", search_num);
-//
-//		for (int i = 0; i < deg[position]; i++)
-//		{
-//			edge[position][map[position][i]] = 0;
-//			edge[map[position][i]][position] = 0;
-//		}
-//		//如果最大值大于当前最大值，那么替换
-//		if (strlen(search_num) > strlen(max_number))
-//		{
-//			memcpy(max_number, search_num, sizeof(max_number));
-//		}
-//		else if (strlen(search_num) == strlen(max_number))
-//		{
-//			if (strcmp(max_number, search_num)<0)
-//				memcpy(max_number, search_num, sizeof(max_number));
-//		}
-//		memcpy(search_num, temp_buf, sizeof(search_num));
-//	}
-//}
 
-
-//void dfs(int position, int cur, int first,int start)
-//{
-//	char temp_buf[maxn];
-//	bool is_end = true;
-//	bool have_path = false;
-//	memcpy(temp_buf, search_num, sizeof(search_num));
-//	//search_num[cur] = number[position];
-//
-//	for (int i = 0; i < deg[position]; i++)
-//	{
-//
-//		if (first) { if (edge[position][map[position][i]]) continue; }
-//
-//		have_path = true;
-//		//如果该节点没有被访问过
-//		if (!vis[map[position][i]])
-//		{
-//			is_end = false;
-//			vis[map[position][i]] = 1;
-//
-//			search_num[cur] = number[map[position][i]];
-//
-//			bool save = true;
-//			for (int j = 0; j < deg[start]; j++) {
-//				if (position == map[start][j]) { save = false; break; }
-//			}
-//			if(save)edge[position][map[position][i]] = 1;
-//
-//			dfs(map[position][i], cur + 1, 0,start);
-//
-//
-//			memcpy(search_num, temp_buf, sizeof(search_num));
-//			vis[map[position][i]] = 0;
-//		}
-//	}
-//	//如果该节点已经没有节点可以访问，表示已经走到了尽头
-//	if (is_end&&have_path) {
-//
-//
-//		search_num[cur] = '\0';
-//		printf("search_num = %s\n", search_num);
-//		dist = max(cur, dist);
-//		//for (int i = 0; i < deg[position]; i++)
-//		//{
-//		//	edge[position][map[position][i]] = 0;
-//		//	edge[map[position][i]][position] = 0;
-//		//}
-//
-//		//如果最大值大于当前最大值，那么替换
-//		if (strlen(search_num) > strlen(max_number))
-//		{
-//			memcpy(max_number, search_num, sizeof(max_number));
-//		}
-//		else if (strlen(search_num) == strlen(max_number))
-//		{
-//			if (strcmp(max_number, search_num)<0)
-//				memcpy(max_number, search_num, sizeof(max_number));
-//		}
-//		memcpy(search_num, temp_buf, sizeof(search_num));
-//	}
-//}
 
 void solve()
 {
