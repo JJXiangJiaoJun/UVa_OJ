@@ -19,9 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UVa818切断圆环链.cpp">
-      <SDLCheck Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</SDLCheck>
-    </ClCompile>
+    <ClCompile Include="UVa12086测量电阻(线段树).cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

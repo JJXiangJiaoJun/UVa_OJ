@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UVa818切断圆环链.cpp">
+    <ClCompile Include="UVa12086测量电阻(线段树).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
