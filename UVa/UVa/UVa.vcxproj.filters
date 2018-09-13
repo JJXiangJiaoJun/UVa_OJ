@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HDU6344调查问卷(百度之星).cpp">
+    <ClCompile Include="UVa11694GokigenNanname谜题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
