@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ch8高效算法设计\UVa11134传说中的车%28贪心经典算法%29.cpp">
+    <ClCompile Include="ch8高效算法设计\UVa11575唯一的雪花.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
