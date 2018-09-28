@@ -104,7 +104,7 @@ void solve()
 		if (getoutput(mid) == ans1) R = mid - 1;
 		else L = mid + 1;
 	}
-	printf("L = %d\n", L);
+	//printf("L = %d\n", L);
 	for (int i = 1; i < L; i++)
 		printf("1");
 	printf("x");
