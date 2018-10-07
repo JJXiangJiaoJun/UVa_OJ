@@ -17,6 +17,7 @@ int solve()
 	memset(seq, 0, sizeof(seq));
 	memset(num, 0, sizeof(num));
 
+	//要考虑s>n的情况
 	if (s > n)
 	{
 		//统计第一个滑动窗口
@@ -78,7 +79,7 @@ int solve()
 			num[del_sid]--;
 			//printf("seq[%d]=%d\n", k, seq[k]);
 		}
-
+	}
 
 		//枚举起点并进行判断
 
@@ -101,7 +102,7 @@ int solve()
 			}
 		}
 
-	}
+	
 	return ans;
 }
 
