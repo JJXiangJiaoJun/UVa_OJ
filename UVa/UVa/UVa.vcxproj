@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ch8高效算法设计\UVa12265贩卖土地.cpp" />
+    <ClCompile Include="ch8高效算法设计\UVa1610聚会游戏.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
