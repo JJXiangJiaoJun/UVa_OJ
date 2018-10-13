@@ -23,6 +23,7 @@ int solve()
 		if (S[i] == '1')	cntS1++;
 		if (T[i] == '1')	cntT1++;
 	}
+
 	if (cntS1 > cntT1) return -1; //无解;
 	//printf("ans = %d\n", ans);
 	for (int i = 0; i < lens; i++)
@@ -37,7 +38,7 @@ int solve()
 			}
 			else
 				S[i] = T[i];
-			ans++;
+			ans++;//所有 '?' 都要进行一次变换，计数+1
 		}
 	}
 	int is_diff = 0;
