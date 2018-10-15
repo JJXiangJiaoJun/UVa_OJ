@@ -1,5 +1,13 @@
-﻿  UVa177折纸痕.cpp
-f:\github\uva_oj\uva\uva\ch8高效算法设计\uva177折纸痕.cpp(20): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-f:\github\uva_oj\uva\uva\ch8高效算法设计\uva177折纸痕.cpp(104): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  UVa1611起重机.cpp
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1611起重机.cpp(23): warning C4101: “max_s”: 未引用的局部变量
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1611起重机.cpp(66): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(242): note: 参见“freopen”的声明
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1611起重机.cpp(67): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(242): note: 参见“freopen”的声明
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1611起重机.cpp(69): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1611起重机.cpp(72): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1611起重机.cpp(74): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
   UVa.vcxproj -> F:\GitHub\UVa_OJ\UVa\x64\Debug\UVa.exe
