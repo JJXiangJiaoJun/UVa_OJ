@@ -1,10 +1,12 @@
-﻿  UVa11925生成排列.cpp
-f:\github\uva_oj\uva\uva\ch8高效算法设计\uva11925生成排列.cpp(68): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  UVa1612猜名次.cpp
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1612猜名次.cpp(123): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(242): note: 参见“freopen”的声明
-f:\github\uva_oj\uva\uva\ch8高效算法设计\uva11925生成排列.cpp(69): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1612猜名次.cpp(124): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(242): note: 参见“freopen”的声明
-f:\github\uva_oj\uva\uva\ch8高效算法设计\uva11925生成排列.cpp(70): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1612猜名次.cpp(125): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
-f:\github\uva_oj\uva\uva\ch8高效算法设计\uva11925生成排列.cpp(73): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1612猜名次.cpp(134): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1612猜名次.cpp(146): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
   UVa.vcxproj -> F:\GitHub\UVa_OJ\UVa\x64\Debug\UVa.exe
