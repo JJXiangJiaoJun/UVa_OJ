@@ -34,7 +34,6 @@ struct Node {
 	}
 
 	Node(){}
-	Node(int _x,int _y):x(_x),y(_y){}
 };
 
 int D;
