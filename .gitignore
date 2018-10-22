@@ -32,4 +32,10 @@
 *.app
 
 ./UVa/Debug
+./UVa/Release
+./x64
+./.vs
+
 ./UVa/UVa/Debug
+./UVa/UVa/Release
+./UVa/UVa/x64
