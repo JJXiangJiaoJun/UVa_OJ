@@ -1,10 +1,12 @@
-﻿  UVa1614奇怪的股市.cpp
-f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1614奇怪的股市.cpp(15): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  UVa1615高速公路.cpp
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1615高速公路.cpp(21): warning C4244: “=”: 从“double”转换到“__int64”，可能丢失数据
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1615高速公路.cpp(23): warning C4244: “=”: 从“double”转换到“__int64”，可能丢失数据
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1615高速公路.cpp(69): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(242): note: 参见“freopen”的声明
-f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1614奇怪的股市.cpp(16): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1615高速公路.cpp(70): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(242): note: 参见“freopen”的声明
-f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1614奇怪的股市.cpp(17): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1615高速公路.cpp(71): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
-f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1614奇怪的股市.cpp(20): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+f:\github\uva_oj\uva\uva\ch8高效算法设计\uva1615高速公路.cpp(75): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
   UVa.vcxproj -> F:\GitHub\UVa_OJ\UVa\x64\Debug\UVa.exe

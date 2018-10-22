@@ -4,9 +4,9 @@
 #include <algorithm>
 using namespace std;
 
-const int maxn = 1000000 + 1000;
+const int maxn = 100000 + 1000;
 int A[maxn];
-int sum;
+long long sum;
 int n;
 int sel[maxn];
 
@@ -14,7 +14,7 @@ int main()
 {
 	freopen("C:\\Users\\lenovo\\Desktop\\test\\in.txt", "r", stdin);
 	freopen("C:\\Users\\lenovo\\Desktop\\test\\out.txt", "w", stdout);
-	while (scanf("%d", &n) == 1 && n)
+	while (scanf("%d", &n) == 1)
 	{
 		for (int i = 0; i < n; i++)
 			scanf("%d", &A[i]);
