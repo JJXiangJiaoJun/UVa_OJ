@@ -59,11 +59,11 @@ int main()
 	freopen("C:\\Users\\lenovo\\Desktop\\test\\out.txt", "w", stdout);
 	scanf("%d", &N);
 	int a;
-	int maxp=0;
 	while (N--)
 	{
 		
 		tot = 0;
+		int maxp = 0;
 		scanf("%d%d", &m, &k);
 		for (int i = 0; i < m; i++)
 		{
@@ -73,20 +73,21 @@ int main()
 		}
 		LL L = maxp;
 		LL R = tot;
-		while (L <= R)
-		{
-			LL m = L + (R - L) / 2;
-			if (solve(m) <= k) R = m - 1;
-			else L = m + 1;
-		}
-		//LL L = maxp;
-		//LL R = tot+1;
-		//while (L < R)
+		//while (L <= R)
 		//{
 		//	LL m = L + (R - L) / 2;
-		//	if (solve(m) <= k) R = m;
+		//	if (solve(m) <= k) R = m - 1;
 		//	else L = m + 1;
 		//}
+		//LL L = maxp;
+		//LL R = tot+1;
+		while (L < R)
+		{
+			LL m = L + (R - L) / 2;
+			if (solve(m) <= k) R = m;
+			else L = m + 1;
+		}
+		//printf("%lld\n", L);
 		print(L);
 	}
 	return 0;

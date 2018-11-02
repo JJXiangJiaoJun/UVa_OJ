@@ -94,16 +94,27 @@ void solve()
 	//说明电路输出不相等，下面进行二分求解
 
 	int L = 1, R = n;
-	while (L <= R)
+	//while (L <= R)
+	//{
+	//	//计算中点
+	//	int mid = L + (R - L) / 2;
+	//	//printf("mid = %d", mid);
+
+	//	//判断
+	//	if (getoutput(mid) == ans1) R = mid - 1;
+	//	else L = mid + 1;
+	//}
+	while (L < R)
 	{
 		//计算中点
 		int mid = L + (R - L) / 2;
 		//printf("mid = %d", mid);
 
 		//判断
-		if (getoutput(mid) == ans1) R = mid - 1;
+		if (getoutput(mid) == ans1) R = mid;
 		else L = mid + 1;
 	}
+
 	//printf("L = %d\n", L);
 	for (int i = 1; i < L; i++)
 		printf("1");
