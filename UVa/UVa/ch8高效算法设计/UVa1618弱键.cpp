@@ -40,7 +40,7 @@ bool judge()
 				//进行二分查找,往左侧找出小于 ACM[j] 最大的数字
 				int p = lower_bound(L[i].begin(), L[i].end(), ACM[j]) - L[i].begin();
 				//在右侧找出大于ACM[i]最小的数字
-				int s = lower_bound(R[j].begin(), R[j].end(), ACM[i]) - R[j].begin();
+				int s = upper_bound(R[j].begin(), R[j].end(), ACM[i]) - R[j].begin();
 
 				//如果找不到会越界，需要判断
 				if (p == 0 || s == R[j].size()) continue;
