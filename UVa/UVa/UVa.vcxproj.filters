@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UVa1025城市里的间谍.cpp">
+    <ClCompile Include="ch9动态规划\UVa12563.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
