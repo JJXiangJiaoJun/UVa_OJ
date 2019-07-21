@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ch9动态规划\UVa12186工人的请愿书.cpp">
+    <ClCompile Include="训练指南\UVa 10881蚂蚁.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

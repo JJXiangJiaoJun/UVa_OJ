@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ch9动态规划\UVa12186工人的请愿书.cpp" />
+    <ClCompile Include="训练指南\UVa 10881蚂蚁.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
